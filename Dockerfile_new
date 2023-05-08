@@ -1,7 +1,8 @@
 FROM mys-base:base
 SHELL ["/bin/bash", "-c"]
-ENV PATH $PATH:/usr/local/ssl/bin
-ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/ssl/lib64:/usr/local/lib
+#ENV PATH $PATH:/usr/local/ssl/bin
+#ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/ssl/lib64:/usr/local/lib
+ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/lib64:/usr/local/lib
 ENV SSL_CERT_DIR /etc/ssl/certs
 ENV JAVA_HOME /opt/java/openjdk
 ENV PATH $JAVA_HOME/bin:$PATH
